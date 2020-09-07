@@ -59,6 +59,11 @@ and alas, we have a map image:
 $ pip install -U mapsnap
 ```
 
+If you're having installation problems due to ecdsa **gmpy2** dependency, try installing the **libgmp**, **libmpfr** and **libmpc**:
+
+-   **(mac)** - `brew install gmp mpfr libmpc mpc`
+-   **(linux)** - `sudo apt install -y libgmp-dev libmpfr-dev libmpc-dev`
+
 ### Setup
 
 -   First you need to head to your [Apple Developer Account](https://developer.apple.com/account/)
