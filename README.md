@@ -125,7 +125,7 @@ If you want to set a value for a parameter, you can check the mapped values curr
 
 ### Authors
 
--   [Ygor Lemos <ygbr@mac.com>](@ygbr)
+-   [Ygor Lemos <ygbr@mac.com>](https://ygor.dev)
 
 ### Contributing
 
