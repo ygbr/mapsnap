@@ -2,6 +2,7 @@
 __pycache__/
 *.py[cod]
 *$py.class
+.cache
 
 # C extensions
 *.so
@@ -109,6 +110,11 @@ venv/
 ENV/
 env.bak/
 venv.bak/
+.DS_Store
+
+# Editors
+.vscode
+.idea
 
 # Spyder project settings
 .spyderproject
@@ -127,3 +133,6 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# Temp Test Ignore
+test*
