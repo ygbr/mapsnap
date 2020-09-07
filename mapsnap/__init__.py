@@ -78,7 +78,15 @@ class MapSnap:
 
         self._qs = self.serialize()
         self._sig = self.sign()
+
+        del self._sk
+        self._key = None
+        self.teamId = None
+        self.keyId = None
+
         self.url = f"{self.BASE_URL}{self._sig}"
+
+        del self._sig
 
     def serialize(self):
         """Serializes all parameters before performing the request"""
