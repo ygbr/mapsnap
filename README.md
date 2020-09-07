@@ -50,3 +50,9 @@ $ pip install mapsnap
 ### LICENSE
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+### DISCLAIMERS AND TRADEMARKS
+
+Apple, Apple Maps, MapKit and iOS are registered trademarks of [Apple Inc.](https://apple.com)
+
+The Apple Maps Web Snapshots are currently considered **Beta Software** and subject to change.
