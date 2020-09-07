@@ -109,7 +109,7 @@ The rest of the parameters are mapped directly from [Apple Maps Web Snapshots](h
 
 I have tried to map as much as possible as dataclasses that can be imported from this module itself as shown in examples.
 
-If you want to set a value for a parameter, you can check the mapped values currently implemented on /mapsnap/utils.py
+If you want to set a value for a parameter, you can check the mapped values currently implemented on [/mapsnap/utils.py](https://github.com/ygbr/mapsnap/blob/master/mapsnap/utils.py)
 
 ### Requirements
 
