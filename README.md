@@ -47,7 +47,7 @@ The sample below shows how you can fetch the PNG image directly and write it to 
 
 and alas, we have a map image:
 
-<INSERT MAP IMAGE HERE>
+![Sample1](/docs/img/sample1.png)
 
 > You can later convert the PNG file to other formats using an image module like [Pillow](https://pypi.org/project/Pillow/).
 
