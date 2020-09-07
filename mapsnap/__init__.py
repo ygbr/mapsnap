@@ -5,24 +5,18 @@
 
     Generates static maps using Apple's MapKit API
 
-    @author Ygor Lemos <ygbr@mac.com>
+    Check the docs at: https://mapsnap.ygor.dev
 
-    * First you need to convert your .p8 key to a EC PEM format that python-ecdsa can use.
-        * You can do that using: #openssl ec -in [PATH_TO_ORIGINAL_KEY.p8] -out [PATH_TO_OUTPUT_PEM_KEY.pem]
-        * You need to set the path for this generated .pem on the *_key* parameter
-    * Requirements:
-        * Python 3.7 or superior
-        * ecdsa[gmpy2]
-        * requests
-    * Official Apple Docs: https://developer.apple.com/documentation/snapshots
 """
 
+__title__ = "mapsnap"
+__description__ = "Apple Maps Web Snapshots on Python"
+__url__ = "https://mapsnap.ygor.dev"
 __author__ = "Ygor Lemos"
-__copyright__ = "Ygor Abreu Lemos 2020"
+__copyright__ = "2020 Ygor Lemos"
 __contact__ = "ygbr@mac.com"
 __email__ = "ygbr@mac.com"
 __license__ = "MIT"
-__maintainer__ = "Ygor Lemos"
 __status__ = "Development"
 
 __version__ = "1.0.0"
@@ -37,9 +31,16 @@ from typing import List, Union
 from urllib.parse import urlencode
 
 import requests
-from ecdsa import SigningKey, VerifyingKey
+from ecdsa import SigningKey
 
-from .utils import MapType, ColorScheme, MarkerStyle, Overlay, Image, Annotation
+from .utils import (  # noqa: F401
+    Annotation,
+    ColorScheme,
+    Image,
+    MapType,
+    MarkerStyle,
+    Overlay,
+)
 
 
 @dataclass
