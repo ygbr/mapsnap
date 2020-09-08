@@ -19,7 +19,7 @@ __email__ = "ygbr@mac.com"
 __license__ = "MIT"
 __status__ = "Development"
 
-__version__ = "1.0.0"
+__version__ = "1.0.1"
 
 import json
 from base64 import urlsafe_b64encode
