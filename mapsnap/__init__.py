@@ -74,8 +74,15 @@ class MapSnap:
     def __post_init__(self):
         """Initialize, Serialize and Sign"""
 
-        with open(self._key, "rb") as fp:
-            self._sk = SigningKey.from_pem(fp.read())
+        if isinstance(self._key, bytes):
+            self._sk = SigningKey.from_pem(self._key)
+        elif isinstance(self._key, str):
+            with open(self._key, "rb") as fp:
+                self._sk = SigningKey.from_pem(fp.read())
+        else:
+            raise ValueError(
+                "_key must be a str with the path or a bytes object with the raw key"
+            )
 
         self._qs = self.serialize()
         self._sig = self.sign()
