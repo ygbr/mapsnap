@@ -104,11 +104,11 @@ Every time you create a new instance of this class, a signed URL is automaticall
 
 ##### Default Parameters and Attributes
 
-| Parameter  | Type | Description                                                                                                                                                                                                                                                            |
-| ---------- | ---- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **\_key**  | str  | The path for the .p8 or .pem file containing your MapKit JS Key downloaded from Apple Developer Portal. **(ex: /opt/myapplekeys/AuthKey_XXXXXXXXXX.p8)**                                                                                                               |
-| **teamId** | str  | Your Apple Developer Team ID (you can view it on https://developer.apple.com after logging in near your company/developer name or by accessing the **Membership** option on the menu)                                                                                  |
-| **keyId**  | str  | This ID is shown to you when you create your key and is generally part of the key file name, for instance if the downloaded key file is AuthKey_XYZ712387.p8 your keyId is XYZ712387. (You can double check it by going to your details on the Apple Developer portal) |
+| Parameter  | Type         | Description                                                                                                                                                                                                                                                            |
+| ---------- | ------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **\_key**  | str or bytes | The path for the .p8 or .pem file containing your MapKit JS Key downloaded from Apple Developer Portal. **(ex: /opt/myapplekeys/AuthKey_XXXXXXXXXX.p8)** <br> This can also be a **bytes** object containing the raw contents of the key file.                         |
+| **teamId** | str          | Your Apple Developer Team ID (you can view it on https://developer.apple.com after logging in near your company/developer name or by accessing the **Membership** option on the menu)                                                                                  |
+| **keyId**  | str          | This ID is shown to you when you create your key and is generally part of the key file name, for instance if the downloaded key file is AuthKey_XYZ712387.p8 your keyId is XYZ712387. (You can double check it by going to your details on the Apple Developer portal) |
 
 The rest of the parameters are mapped directly from [Apple Maps Web Snapshots](https://developer.apple.com/documentation/snapshots) documentation and can be used as guided there.
 
